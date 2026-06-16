@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ═══ Core SEO ═══ -->
+  <title>ASUS חיפוי מבנים | מומחים בחיפוי חיצוני ועבודות סנפלינג</title>
+  <meta name="description" content="ASUS – חברה מובילה לחיפוי מבנים חיצוניים, חיפוי חזיתות ועבודות סנפלינג. משרתים ועדי בתים, חברות ולקוחות פרטיים. ניסיון מוכח, ביטוח מלא.">
+  
+  <!-- ═══ Open Graph ═══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="ASUS חיפוי מבנים | מומחי חיפוי וסנפלינג">
+  <meta property="og:description" content="חברה מובילה לחיפוי מבנים חיצוניים ועבודות סנפלינג. ניסיון מוכח, ביטוח מלא, תוצאות ברמה אחרת.">
+  <meta property="og:image" content="https://asus-hafui.co.il/og-image.jpg">
+
+  <!-- ═══ Schema.org – LocalBusiness ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ASUS חיפוי מבנים",
+    "description": "מומחים לחיפוי מבנים חיצוניים ועבודות סנפלינג. שיקום חזיתות, חיפוי HPL, אלוקובונד ועבודות גובה.",
+    "telephone": "055-6640920",
+    "areaServed": {"@type": "Country", "name": "Israel"},
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "שירותי חיפוי מבנים",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "חיפוי מבנים חיצוניים"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "עבודות סנפלינג"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "פרויקטים מיוחדים"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- ═══ Fonts ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ══════════════════════════════════════════
+       DESIGN TOKENS
+    ══════════════════════════════════════════ */
+    :root {
+      --primary: #1A1A2E;
+      --primary-mid: #16213E;
+      --accent: #E85D0E;
+      --accent-dark: #C44D08;
+      --accent-light: #FF7A30;
+      --steel: #2A6A9E;
+      --warm-bg: #F8F5F0;
+      --warm-bg-2: #F0EBE3;
+      --text-primary: #1C1C1E;
+      --text-secondary: #4A4A5A;
+      --text-muted: #7A7A8A;
+      --border: #E0D9CF;
+      --white: #FFFFFF;
+      --radius-md: 10px;
+      --radius-lg: 18px;
+      --shadow-md: 0 4px 20px rgba(26,26,46,0.12);
+      --shadow-lg: 0 12px 40px rgba(26,26,46,0.16);
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ══════════════════════════════════════════
+       RESET + BASE
+    ══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Heebo', sans-serif;
+      color: var(--text-primary);
+      line-height: 1.6;
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+    p { margin-bottom: 1rem; }
+    
+    img { max-width: 100%; height: auto; display: block; }
+    
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section { padding: 80px 0; }
+
+    /* ══════════════════════════════════════════
+       BUTTONS
+    ══════════════════════════════════════════ */
+    .btn {
+      display: inline-block;
+      padding: 16px 32px;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(232, 93, 14, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(232, 93, 14, 0.4);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    /* ══════════════════════════════════════════
+       HEADER / HERO
+    ══════════════════════════════════════════ */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/></svg>');
+      background-size: 300px;
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: var(--white);
+      max-width: 800px;
+    }
+
+    .hero-logo {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      color: var(--accent-light);
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ══════════════════════════════════════════
+       WHY ASUS SECTION
+    ══════════════════════════════════════════ */
+    .why-asus {
+      background: var(--warm-bg);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 40px 30px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ══════════════════════════════════════════
+       SERVICES SECTION
+    ══════════════════════════════════════════ */
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--warm-bg);
+      padding: 40px;
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      border-color: var(--accent);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-card h3 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .service-link {
+      color: var(--accent);
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+
+    .service-link:hover {
+      color: var(--accent-dark);
+      gap: 12px;
+    }
+
+    /* ══════════════════════════════════════════
+       CLIENTS SECTION
+    ══════════════════════════════════════════ */
+    .clients {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .clients .section-header h2 {
+      color: var(--white);
+    }
+
+    .clients .section-header p {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .client-card {
+      background: rgba(255,255,255,0.05);
+      padding: 35px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .client-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--accent-light);
+    }
+
+    .client-card p {
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+
+    /* ══════════════════════════════════════════
+       CTA SECTION
+    ══════════════════════════════════════════ */
+    .cta {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .cta h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.9);
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .cta .btn {
+      background: var(--white);
+      color: var(--accent);
+      font-size: 1.2rem;
+      padding: 18px 40px;
+    }
+
+    .cta .btn:hover {
+      background: var(--warm-bg);
+      transform: scale(1.05);
+    }
+
+    /* ══════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════ */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      section { padding: 60px 0; }
+      
+      .hero-buttons {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+      }
+      
+      .feature-card,
+      .service-card,
+      .client-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <header>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-logo">ASUS</div>
+        <h1>הפנים של הבניין שלכם – בידיים הנכונות</h1>
+        <p class="hero-subtitle">
+          ASUS מתמחה בחיפוי מבנים חיצוניים, שיקום חזיתות ועבודות סנפלינג מקצועיות.<br>
+          מרפורמה בניין ועד לפרויקטים מיוחדים – אנחנו מספקים תוצאות שעומדות בזמן.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">קבל הצעת מחיר ➜</a>
+          <a href="#services" class="btn btn-secondary">צפה בשירותים</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       WHY ASUS SECTION
+  ══════════════════════════════════════════ -->
+  <section class="why-asus" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2>למה בוחרים ב-ASUS לחיפוי המבנה שלכם?</h2>
+        <p>ארבעה יתרונות שהופכים אותנו לבחירה הנכונה</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>ניסיון ומקצועיות</h3>
+          <p>צוות ASUS מורכב ממומחי חיפוי מבנים ועובדי גובה מוסמכים עם ניסיון רב שנים בשטח. אנחנו מכירים כל סוג חיפוי, כל סוג מבנה, וכל אתגר שיכול לעלות בפרויקט.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">⛰️</div>
+          <h3>טכנולוגיית סנפלינג מתקדמת</h3>
+          <p>עבודות גובה ללא פיגומים – מהירות יותר, זולות יותר ומינימום הפרעה לדיירים ולמשתמשי הבניין. הצוות שלנו מוסמך ומבוטח בהתאם לכל תקני הבטיחות.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>שירות מותאם לכל לקוח</h3>
+          <p>ועד בית, מנהל אחזקה, חברה גדולה או לקוח פרטי – אנחנו יודעים לעבוד מול כל אחד. ניהול פרויקט שקוף, עמידה בלוחות זמנים ודוחות התקדמות שוטפים.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>ביטוח מלא ואחריות</h3>
+          <p>כל עבודה מגובה בביטוח אחריות מקצועית וביטוח עובדים. אנחנו לא עוזבים פרויקט עד שהלקוח מרוצה לחלוטין.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES SECTION
+  ══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>השירותים שלנו</h2>
+        <p>פתרונות מקיפים לכל סוגי חיפוי המבנים</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>חיפוי מבנים חיצוניים</h3>
+          <p>מחידוש אריחים ועד חיפוי HPL ואלוקובונד – אנחנו מתאימים את פתרון החיפוי הנכון לבניין שלכם. כולל טיפול באריחים רופפים, איטום ושיקום מלא.</p>
+          <a href="#contact" class="service-link">קרא עוד ←</a>
+        </div>
+        
+        <div class="service-card">
+          <h3>עבודות סנפלינג</h3>
+          <p>גישה לכל נקודה בבניין ללא צורך בפיגומים. מהירות, יעילות ובטיחות מרבית. מתאים לבניינים גבוהים, עבודות נקודתיות וסביבות צפופות.</p>
+          <a href="#contact" class="service-link">קרא עוד ←</a>
+        </div>
+        
+        <div class="service-card">
+          <h3>פרויקטים מיוחדים</h3>
+          <p>מבנים עם אדריכלות ייחודית, עבודות בסביבות מאתגרות, דרישות חריגות – אנחנו אוהבים אתגרים ומספקים פתרונות יצירתיים.</p>
+          <a href="#contact" class="service-link">קרא עוד ←</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CLIENTS SECTION
+  ══════════════════════════════════════════ -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <div class="section-header">
+        <h2>עם מי אנחנו עובדים?</h2>
+        <p>שירות מקצועי מותאם לכל סוג לקוח</p>
+      </div>
+      
+      <div class="clients-grid">
+        <div class="client-card">
+          <h3>ועדי בתים</h3>
+          <p>אנחנו מבינים את האחריות של ועד הבית ואת הצורך בתיאום עם דיירים. מעניקים שקיפות מלאה, עמידה בתקציב ולוח זמנים מוסכם מראש.</p>
+        </div>
+        
+        <div class="client-card">
+          <h3>מנהלי אחזקה ורכש</h3>
+          <p>עבור חברות גדולות וקטנות – אנחנו יודעים לעבוד לפי נהלי רכש, לספק כל מסמך נדרש (ביטוחים, רישיונות, חשבוניות מסודרות) ולתאם סביב שעות הפעילות.</p>
+        </div>
+        
+        <div class="client-card">
+          <h3>לקוחות פרטיים</h3>
+          <p>ביתכם הוא ההשקעה הגדולה ביותר שלכם. אנחנו מתייחסים אליו בהתאם – בקפידה, בדיוק ובכבוד. ליווי אישי מההתחלה ועד הסיום.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CTA SECTION
+  ══════════════════════════════════════════ -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>מוכן להתחיל?</h2>
+      <p>קבל הצעת מחיר ללא עלות וללא התחייבות עבור חיפוי מבנה או עבודת סנפלינג</p>
+      <a href="tel:0556640920" class="btn">דברו איתנו עכשיו: 055-6640920</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 ASUS חיפוי מבנים. כל הזכויות שמורות.</p>
+      <p style="margin-top: 10px; font-size: 0.85rem; opacity: 0.6;">
+        ⚠️ ASUS חיפוי מבנים אינה קשורה לחברת המחשבים ASUS
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
